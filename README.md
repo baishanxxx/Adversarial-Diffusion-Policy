@@ -43,7 +43,7 @@ A visual-feature discriminator acts as a reward generator, evaluating the predic
 
 **Performance Showcase (实际表现):**
 <p align="center">
-  <img src="assets/video1_1.gif" width="40%" />
+  <img src="assets/video1_1.gif" width="30%" />
 </p>
 <p align="center">
   <em>(Agent behavior trained with Adversarial Discriminator / 使用对抗判别器训练的操作表现)</em>
@@ -68,7 +68,7 @@ A baseline approach directly computing the Mean Squared Error between the predic
 
 **Performance Showcase (实际表现):**
 <p align="center">
-  <img src="assets/video2_1.gif" width="40%" />
+  <img src="assets/video2_1.gif" width="30%" />
 </p>
 <p align="center">
   <em>(Agent behavior trained with Feature MSE / 使用特征均方误差基线训练的操作表现)</em>
