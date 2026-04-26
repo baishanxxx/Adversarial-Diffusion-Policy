@@ -35,11 +35,19 @@ To effectively align the agent's behavior with the expert's state distribution, 
 *为了有效地将智能体行为与专家状态分布对齐，我们引入了一种结合了条件扩散模型与 GAN 的对抗学习目标。我们探索了两种不同的观测匹配路径：*
 
 ### 1. Adversarial Discriminator / 对抗判别器
-<img src="assets/methon1.png" width="80%" />
+<img src="assets/method1.png" width="80%" />
 
 A visual-feature discriminator acts as a reward generator, evaluating the predicted observation sequences. The Diffusion Policy acts as the generator, learning to produce action sequences that lead to visually indistinguishable states from the expert. This method significantly filters out local drift noise.
 
 *(视觉特征判别器作为奖励生成器，对预测的观测序列进行评估。扩散策略作为生成器，学习生成能导致与专家视觉状态难以区分的动作序列。此方法有效过滤了局部漂移噪声。)*
+
+**Performance Showcase (实际表现):**
+<p align="center">
+  <img src="assets/video1_1.gif" width="60%" />
+</p>
+<p align="center">
+  <em>(Agent behavior trained with Adversarial Discriminator / 使用对抗判别器训练的操作表现)</em>
+</p>
 
 **Training Stability (训练稳定性):** Both our generator and discriminator networks show rapid and stable loss convergence during training. *(在训练过程中，我们的生成器和判别器网络均表现出快速且稳定的损失收敛。)*
 
@@ -52,11 +60,19 @@ A visual-feature discriminator acts as a reward generator, evaluating the predic
 </p>
 
 ### 2. Feature MSE / 特征均方误差
-<img src="assets/methon2.png" width="80%" />
+<img src="assets/method2.png" width="80%" />
 
 A baseline approach directly computing the Mean Squared Error between the predicted and ground-truth visual features.
 
 *(一种基线方法，直接计算预测视觉特征与真实特征之间的均方误差。)*
+
+**Performance Showcase (实际表现):**
+<p align="center">
+  <img src="assets/video2_1.gif" width="60%" />
+</p>
+<p align="center">
+  <em>(Agent behavior trained with Feature MSE / 使用特征均方误差基线训练的操作表现)</em>
+</p>
 
 **Training Stability (训练稳定性):**
 
