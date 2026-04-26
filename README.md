@@ -1,7 +1,7 @@
 # Adversarial Diffusion Policy for Observation-Based Learning
 ### 基于观测学习的对抗扩散策略
 
-![Status](https://img.shields.io/badge/Status-Paper_under_review-blue)
+![Status](https://img.shields.io/badge/Status-In_Preparation-blue)
 ![Code](https://img.shields.io/badge/Code-Coming_soon-orange)
 
 > **Teaser:** A novel framework that recovers robust manipulation policies exclusively from vision-only expert sequences, completely eliminating the need for explicit action supervision.
