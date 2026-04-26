@@ -78,6 +78,4 @@ Evaluated on the `robomimic lift` dataset in the MuJoCo simulation environment, 
 - 🔥 An **85% success rate** in solving the manipulation task. *(在操作任务中达到 **85% 的成功率**。)*
 - 📈 Retained **91% of the performance** compared to a fully supervised expert baseline that had access to complete action data. *(与拥有完整动作数据的完全监督专家基线相比，保留了 **91% 的性能表现**。)*
 
----
 
-*(Note: Full deployment code and pre-trained weights will be released upon paper acceptance. / 注：完整的部署代码和预训练权重将在论文被接收后开源。)*
