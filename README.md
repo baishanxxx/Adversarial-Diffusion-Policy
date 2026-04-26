@@ -17,7 +17,8 @@ Traditional Imitation Learning (IL) heavily relies on high-quality action-state 
 
 *传统的模仿学习 (IL) 严重依赖于高质量的“动作-状态”数据对，这类数据收集成本高昂且困难。我们的方法将范式转移到了**基于观测的模仿学习 (IfO)**。*
 
-![Comparison Framework](assets/method.jpg)
+![Comparison Framework](assets/method.png)
+
 *Figure 1: Traditional IL vs. Our IfO Pipeline. (图1：传统模仿学习与我们的 IfO 管线对比)*
 
 As shown above, instead of directly matching predicted actions ($a_t$) with ground-truth actions (which we assume are unavailable), our Diffusion Policy takes a history of observations ($O_{t-h}, ..., O_t$) to predict a sequence of future actions. The policy is optimized by minimizing the discrepancy between these predicted visual states and the actual expert video sequences.
