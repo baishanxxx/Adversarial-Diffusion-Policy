@@ -20,7 +20,7 @@ Traditional Imitation Learning (IL) heavily relies on high-quality action-state 
 
 As shown above, instead of directly matching predicted actions ($a_t$) with ground-truth actions (which we assume are unavailable), our Diffusion Policy takes a history of observations ($O_{t-h}, ..., O_t$) to predict a sequence of future actions. These actions are then rolled out in simulation to generate predicted future observations ($[O_t, ..., O_{t+p}]_{\text{pred}}$). The policy is optimized by minimizing the discrepancy between these predicted visual states and the actual expert video sequences.
 
-*如上图所示，我们的模型不再直接将预测动作与真实动作（假设不可用）进行匹配。我们的扩散策略接收历史观测序列，并预测未来的动作序列。随后，这些动作在仿真环境中执行，生成预测的未来观测序列。策略通过最小化这些预测视觉状态与真实专家视频序列之间的差异来进行优化。*
+*如上图所示，我们的模型不再直接将预测动作与真实动作（假设不可用）进行匹配。我们的扩散策略接收历史观测序列，并预测未来的动作序列。策略通过最小化这些预测视觉状态与真实专家视频序列之间的差异来进行优化。*
 
 ---
 
